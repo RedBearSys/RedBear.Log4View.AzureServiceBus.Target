@@ -1,5 +1,5 @@
 # RedBear.Log4View.AzureServiceBus.Target
-An NLog target for use with our Log4View Azure Service Bus plugin.
+An [NLog](http://nlog-project.org/) target for use with our [Log4View Azure Service Bus plugin](https://github.com/RedBearSys/RedBear.Log4View.AzureServiceBus).
 
 Install via NuGet:
 
@@ -7,7 +7,7 @@ Install via NuGet:
 Install-Package RedBear.Log4View.AzureServiceBus.Target
 ```
 
-Then update your config file as follows:
+Then update your config file as follows taking care to include your Service Bus connection string and topic name:
 
 ```xml
 <configSections>
