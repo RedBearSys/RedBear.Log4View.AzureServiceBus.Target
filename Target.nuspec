@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>RedBear.Log4View.AzureServiceBus.Target</id>
+        <version>1.0.0</version>
+        <title>An NLog target for use with our Log4View Azure Service Bus plugin.</title>
+        <authors>Red Bear Systems Limited</authors>
+        <projectUrl>https://github.com/RedBearSys/RedBear.Log4View.AzureServiceBus.Target</projectUrl>
+        <iconUrl>https://avatars3.githubusercontent.com/u/17988342?v=3&amp;s=200</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>An NLog target for use with our Log4View Azure Service Bus plugin.</description>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="NLog" version="4.3.4" />
+                <dependency id="Newtonsoft.Json" version="8.0.3" />
+                <dependency id="WindowsAzure.ServiceBus" version="3.2.2" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Src\bin\Release\RedBear.Log4View.AzureServiceBus.Target.dll" target="lib\RedBear.Log4View.AzureServiceBus.Target.dll" />
+    </files>
+</package>
