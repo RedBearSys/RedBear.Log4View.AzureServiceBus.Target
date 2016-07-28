@@ -8,8 +8,9 @@ assembly_info:
   assembly_informational_version: '{version}'
 before_build:
 - ps: >-
-    cat ("src\RedBear.Log4View.AzureServiceBus.Target.nuspec") | % { $_ -replace "@version", $env:appveyor_build_version } > "src\RedBear.Log4View.AzureServiceBus.Target.nuspec"
-
+    $content = (Get-Content src\RedBear.Log4View.AzureServiceBus.Target.nuspec) 
+    $content = $content -replace '\$version\$',$env:appveyor_build_version
+    $content | Out-File src\RedBear.Log4View.AzureServiceBus.Target.nuspec
     nuget restore src\RedBear.Log4View.AzureServiceBus.Target.sln
 
 build:
