@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>RedBear.Log4View.AzureServiceBus.Target</id>
-        <version>1.0.0</version>
+        <version>@version</version>
         <title>An NLog target for use with our Log4View Azure Service Bus plugin.</title>
         <authors>Red Bear Systems Limited</authors>
         <projectUrl>https://github.com/RedBearSys/RedBear.Log4View.AzureServiceBus.Target</projectUrl>
