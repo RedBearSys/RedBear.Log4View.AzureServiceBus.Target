@@ -1,6 +1,8 @@
 # RedBear.Log4View.AzureServiceBus.Target
 An [NLog](http://nlog-project.org/) target for use with our [Log4View Azure Service Bus plugin](https://github.com/RedBearSys/RedBear.Log4View.AzureServiceBus).
 
+[![Build status](https://ci.appveyor.com/api/projects/status/e7xpli3kt6dyom7n/branch/master?svg=true)](https://ci.appveyor.com/project/redbear/redbear-log4view-azureservicebus-target/branch/master)
+
 Install via NuGet:
 
 ```
