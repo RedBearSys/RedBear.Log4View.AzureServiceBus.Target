@@ -8,7 +8,7 @@ assembly_info:
   assembly_informational_version: '{version}'
 before_build:
 - ps: >-
-    (Get-Content src\RedBear.Log4View.AzureServiceBus.Target.nuspec).replace('@version', $env:appveyor_build_version) | Set-Content src\RedBear.Log4View.AzureServiceBus.Target.nuspec
+    (Get-Content src\RedBear.Log4View.AzureServiceBus.Target.nuspec).replace('@version', $env:appveyor_build_version) | Set-Content "src\RedBear.Log4View.AzureServiceBus.Target.nuspec"
     nuget restore src\RedBear.Log4View.AzureServiceBus.Target.sln
 build:
   publish_nuget: true
